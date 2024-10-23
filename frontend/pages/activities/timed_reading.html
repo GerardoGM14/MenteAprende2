@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectura con Cronómetro</title>
+    <link rel="stylesheet" href="../../css/timed_reading.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lectura con Cronómetro</h1>
+
+        <!-- Contenedor de controles -->
+        <div class="controls-container">
+            <button id="startButton" class="btn" onclick="iniciarCronometro()">Iniciar</button>
+            <button id="stopButton" class="btn" onclick="detenerCronometro()">Detener</button>
+            <button id="menuButton" class="btn" onclick="volverAlMenu()">Volver al Menú</button>
+            <button id="startVoice" class="btn" onclick="activarReconocimientoVoz()">Activar Reconocimiento de Voz</button>
+        </div>
+
+        <!-- Cronómetro y puntaje -->
+        <div class="status-container">
+            <p id="tiempo">⏱ Tiempo: 00:00:00</p>
+            <p id="puntaje">🏆 Puntaje: 0</p>
+        </div>
+
+        <!-- Contenedor del texto de lectura -->
+        <div class="reading-container">
+            <p id="textoLectura"></p>
+        </div>
+
+        <!-- Palabra detectada -->
+        <div class="voice-recognition">
+            <p id="vozDetectada">🎤 Palabra Detectada: Ninguna</p>
+        </div>
+    </div>
+
+    <script src="../../js/timed_reading.js"></script>
+</body>
+</html>

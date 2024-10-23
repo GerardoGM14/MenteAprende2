@@ -1,0 +1,11 @@
+# requirements.txt
+
+Flask==2.0.1           # Framework web ligero para manejar el servidor
+mysql-connector-python==8.0.26  # Conector MySQL para conectar con la base de datos
+bcrypt==3.2.0          # Para el cifrado de contraseñas
+Flask-JWT-Extended==4.3.1  # Para el manejo de autenticación JWT (tokens seguros)
+Flask-CORS==3.0.10     # Para permitir CORS (Cross-Origin Resource Sharing) si necesitas conectar con otro dominio
+gunicorn==20.1.0       # Para correr el servidor en producción
+redis==4.2.0           # (Opcional) Para implementar caché y mejorar rendimiento
+pytest==6.2.5          # Para realizar pruebas unitarias
+requests==2.26.0       # Para hacer solicitudes HTTP si lo necesitas

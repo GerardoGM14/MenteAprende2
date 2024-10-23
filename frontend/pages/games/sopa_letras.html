@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopa de Letras</title>
+    <link rel="stylesheet" href="../../css/sopa_letras.css">
+</head>
+<body>
+    <h1>Sopa de Letras</h1>
+    
+    <!-- Instrucciones del Juego -->
+    <div id="instruccionesModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🧩 Instrucciones del Juego de Sopa de Letras 🧩</h2>
+            <p>El objetivo del juego es encontrar todas las palabras escondidas en la sopa de letras.</p>
+            <p>Usa el mouse para seleccionar las letras y resaltar las palabras. ¡Busca en todas direcciones!</p>
+            <ul>
+                <li>🔹 Fácil: Menos palabras y mayor tiempo.</li>
+                <li>🔹 Intermedio: Más palabras y tiempo medio.</li>
+                <li>🔹 Difícil: Aún más palabras y menor tiempo.</li>
+            </ul>
+            <button id="comenzarJuego">¡Empezar Juego!</button>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <!-- Tablero de la sopa de letras -->
+        <div id="sopaLetras" class="sopa-letras"></div>
+
+        <!-- Palabras a buscar -->
+        <div class="word-list">
+            <h2>Palabras a Buscar 📝</h2>
+            <ul id="palabras"></ul>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <!-- Puntaje y botón -->
+        <p id="puntaje">🏆 Puntaje: 0</p>
+        <button onclick="volverMenu()">Volver al Menú</button>
+    </div>
+
+    <script src="../../js/sopa_letras.js"></script>
+</body>
+</html>
